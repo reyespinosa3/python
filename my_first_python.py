@@ -36,11 +36,13 @@ Even Fibonacci
 """
 Largest Prime Number
 """
-num = 30
 primes = []
-for i in range(2, num):
-    if (num % i) == 0:
-        print("not a prime")
-    else primes.insert(0,num):
-        print(primes)
+for num in range(2,15):
+   if num > 1:
+       for i in range(2,num):
+           if (num % i) == 0:
+               break
+       else:
+           primes.insert(0, num)
+
 print(primes[0])
